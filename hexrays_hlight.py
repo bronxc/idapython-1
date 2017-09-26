@@ -96,7 +96,7 @@ class hexrays_callback_info(object):
             if event == idaapi.hxe_text_ready:
                 self.safe = True
 
-            if event == idaapi.hxe_curpos:
+            if event == idaapi.hxe_double_click:
                 if not self.safe:
                     return 0
                 #print "1"
